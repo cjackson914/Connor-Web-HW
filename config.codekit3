@@ -19,11 +19,11 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/footer/Bowtie Logo.svg": {
+	"/deploy/img/footer/Bowtie-Logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/deploy/img/footer/Bowtie Logo.svg",
+		"oAP": "/deploy/img/footer/Bowtie-Logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -51,12 +51,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/section-3/hero 2.jpg": {
+	"/deploy/img/section-3/hero-2.jpg": {
 		"ft": 16384,
 		"iS": 968739,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/section-3/hero 2.jpg",
+		"oAP": "/deploy/img/section-3/hero-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -95,11 +95,11 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/section-6/pasta circle.png": {
+	"/deploy/img/section-6/pasta-circle.png": {
 		"ft": 32768,
 		"iS": 212082,
 		"oA": 0,
-		"oAP": "/deploy/img/section-6/pasta circle.png",
+		"oAP": "/deploy/img/section-6/pasta-circle.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
