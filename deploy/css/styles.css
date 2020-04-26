@@ -413,3 +413,14 @@ aside img {
 
 #section-6-container img {
   width: 100%; }
+
+/* =============
+    Footer
+============= */
+#footer {
+  display: grid;
+  grid-template-columns: auto 10% auto;
+  grid-template-areas: ". footer ."; }
+
+#footer-content {
+  grid-area: footer; }
