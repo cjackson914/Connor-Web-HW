@@ -449,25 +449,6 @@ h2 {
 /* =============
     Section 6
 ============= */
-#section-6
-#section-6-container {
-  display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-6 ."; }
-
-@media (min-width: 992px) {
-  grid-template-areas: ". photo text .";
-  #section-6-photo {
-    grid-area: photo; }
-  #section-6-text {
-    grid-area: text; } }
-
-#section-6-content {
-  grid-area: section-6; }
-
-#section-6-container img {
-  width: 100%; }
-
 /* =============
     Footer
 ============= */

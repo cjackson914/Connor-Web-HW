@@ -1,31 +1,74 @@
 /* =============
     Section 6
 ============= */
+#section-6{
 
-#section-6 
-
-#section-6-container {
-    display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas: ". section-6 .";
-}
-    @include lg{
-        grid-template-areas: ". photo text .";
-
-        #section-6-photo{
-            grid-area: photo
-        }
-        
-        #section-6-text{
-            grid-area: text
-        }
+    @include md{
+        display: grid;
+        grid-template-columns: auto 80% auto;
+        grid-template-areas:". section-6 .";
     }
 
-#section-6-content {
-    grid-area: section-6;
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+
+    #section-6-container{
+        @include md{
+            grid-area: section-6;
+        }
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
+
+        @include xl{
+
+
+        aside{
+            img: 
+
+        }
+
+        #section-6-text{
+
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: . section-6-text .;
+
+            #section-6-text-content{
+                grid-area: section-6-text;
+            }
+        }
+    }
 }
 
-#section-6-container img {
-    width: 100%;
-}
+
+// #section-6 
+
+// #section-6-container {
+//     display: grid;
+//     grid-template-columns: 10px auto 10px;
+//     grid-template-areas: ". section-6 .";
+// }
+//     @include lg{
+//         grid-template-areas: ". photo text .";
+
+//         #section-6-photo{
+//             grid-area: photo
+//         }
+        
+//         #section-6-text{
+//             grid-area: text
+//         }
+//     }
+
+// #section-6-content {
+//     grid-area: section-6;
+// }
+
+// #section-6-container img {
+//     width: 100%;
+// }
 
