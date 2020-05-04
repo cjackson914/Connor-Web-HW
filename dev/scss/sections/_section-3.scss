@@ -7,8 +7,14 @@
         width: 100%;
     }
 
-    // @include xl{
-    //     display: grid;
-    //     grid-template-columns: auto 1200px auto;
-    //     grid-template-areas:". image .";
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas:". hero-2 .";
+
+        #section-3-hero{
+            grid-area: hero-2;
     }
+    
+    }
+}

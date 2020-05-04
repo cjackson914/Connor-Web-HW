@@ -24,10 +24,12 @@
         }
 
         @include xl{
-
+        }
 
         aside{
-            img: 
+            img{
+                width: 100%
+            }
 
         }
 
@@ -35,7 +37,7 @@
 
             display: grid;
             grid-template-columns: 10px auto 10px;
-            grid-template-areas: . section-6-text .;
+            grid-template-areas:". section-6-text .";
 
             #section-6-text-content{
                 grid-area: section-6-text;
