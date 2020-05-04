@@ -4,8 +4,19 @@
 
 #section-1{
 
-    img{
-        width: 100%;
+        img{
+            width: 100%;
+        }
     }
-    
-}
+
+
+    // @include xl{
+    //     display: grid;
+    //     grid-template-columns: auto 1200px auto;
+    //     grid-template-areas: ". section-1 .";
+    // }
+
+    // #section-1-content{
+    //     @include xl{
+    //         grid-area: section-1;
+    //     }

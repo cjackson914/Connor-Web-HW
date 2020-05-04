@@ -4,6 +4,12 @@
 
 #section-2{
 
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2-content .";
+    }
+
     #section-2-container{
         @include md{
             display: grid;
@@ -14,9 +20,9 @@
         @include lg{
             grid-template-columns: 50% auto;
         }
+
         @include xl{
-            grid-template-columns: auto 600px 600px auto;
-            grid-template-areas: ". photo text .";
+            grid-area: section-2-content;
         }
 
         aside{

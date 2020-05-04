@@ -361,6 +361,12 @@ textarea {
 /* =============
     Section 2
 ============= */
+@media (min-width: 1200px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-2-content ."; } }
+
 @media (min-width: 768px) {
   #section-2 #section-2-container {
     display: grid;
@@ -374,8 +380,7 @@ textarea {
 
 @media (min-width: 1200px) {
   #section-2 #section-2-container {
-    grid-template-columns: auto 600px 600px auto;
-    grid-template-areas: ". photo text ."; } }
+    grid-area: section-2-content; } }
 
 @media (min-width: 768px) {
   #section-2 #section-2-container aside {
