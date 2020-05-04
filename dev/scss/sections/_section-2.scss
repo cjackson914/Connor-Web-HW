@@ -1,18 +1,44 @@
 /* =============
     Section 2
 ============= */
-#section-2-container{
-    display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas: ". section-2 .";
 
-    #section-2-content{
-        grid-area: section-2;
-    }
-}
+#section-2{
+
+    #section-2-container{
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "photo text";
+            gap: 20px;
+        }
+        @include lg{
+            grid-template-columns: 50% auto;
+        }
+        @include xl{
+            grid-template-columns: auto 600px 600px auto;
+            grid-template-areas: ". photo text .";
+        }
 
         aside{
+            @include md{
+                grid-area: photo;
+            }
             img{
                 width: 100%;
             }
         }
+
+        #section-2-content{
+            display:grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". section-2 .";
+            @include md{
+                grid-area: text;
+            }
+
+            #section-2-content-text{
+                grid-area: section-2;
+            }
+        }
+    }
+}
