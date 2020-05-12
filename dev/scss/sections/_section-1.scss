@@ -2,21 +2,29 @@
     Section 1
 ============= */
 
-#section-1{
+#section-1 {
+    background-image: url('../img/section-1/hero.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    // position: relative;
 
-        img{
-            width: 100%;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include md {
+        height: 50vh;
+
     }
 
+    @include lg {
+        height: 70vh;
+    }
 
-    // @include xl{
-    //     display: grid;
-    //     grid-template-columns: auto 1200px auto;
-    //     grid-template-areas: ". section-1 .";
-    // }
+    @include xl {
+        height: 60vh;
+    }
 
-    // #section-1-content{
-    //     @include xl{
-    //         grid-area: section-1;
-    //     }
+}

@@ -37,7 +37,7 @@
 		"oAP": "/deploy/img/section-1/hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-2/egg.jpg": {
@@ -48,7 +48,7 @@
 		"oAP": "/deploy/img/section-2/egg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-3/hero-2.jpg": {
@@ -81,7 +81,7 @@
 		"oAP": "/deploy/img/section-5/gallery-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-5/gallery-3.jpg": {
@@ -92,7 +92,7 @@
 		"oAP": "/deploy/img/section-5/gallery-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-6/pasta-circle.png": {
@@ -125,16 +125,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/deploy/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/deploy/styles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/design/Pasta Sketch - inclass.sketch": {
 		"cB": 0,
 		"ft": 8192,
@@ -151,6 +141,14 @@
 		"oAP": "/dev/footer.html",
 		"oF": 0
 		},
+	"/dev/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/deploy/index.html",
+		"oF": 3
+		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -158,6 +156,17 @@
 		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 3
+		},
+	"/dev/js/scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dev/js/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,

@@ -1,3 +1,73 @@
 /* =============
     Typography
 ============= */
+h1,h2,h3,h4,h5,h6,p,figure{
+    margin: 0;
+    padding: 0;
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: 400;
+    font-size: rem-calc(37);
+    color: #484D30;
+    // text-align: justify;
+
+    @include md{
+        font-size: rem-calc(56);
+    }
+
+    @include lg{
+        font-size: rem-calc(78);
+    }
+
+}
+
+
+h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: 400;
+    font-size: rem-calc(25);
+    text-align: center;
+    color: #484D30;
+
+    @include md{
+        font-size: rem-calc(35);
+    }
+
+    @include lg{
+     font-size: rem-calc(62);
+    }
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: 400;
+    font-size: rem-calc(25);
+    text-align: center;
+    color: #484D30;
+
+    @include md{
+        font-size: rem-calc(35);
+    }
+
+    @include lg{
+     font-size: rem-calc(35);
+    }
+}
+
+
+
+p{
+    line-height: 25px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    font-size: rem-calc(16);
+    text-align: justify;
+
+    @include md{
+        font-size: rem-calc(18);
+    }
+
+}

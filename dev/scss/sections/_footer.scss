@@ -1,12 +1,25 @@
 /* =============
     Footer
 ============= */
-#footer{
-    display: grid;
-    grid-template-columns: auto 10% auto;
-    grid-template-areas: ". footer ."; 
-}
+#footer {
 
     #footer-content {
-        grid-area: footer; 
+        text-align: right;
+        color: white;
+        height: 80px;
+        background-color: #484D30;
+
+        aside {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #copyright-text {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+        }
     }
+}

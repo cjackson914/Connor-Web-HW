@@ -9,3 +9,27 @@ ul{
         list-style: none;
     }
 }
+
+.content-spacing{
+    margin-top: 40px;
+
+    @include md{
+        margin-top: 50px;
+    }
+
+    @include lg{
+        margin-top: 60px;
+    }
+
+    @include xl{
+        margin-top: 70px;
+    }
+}
+
+hr{
+    border: none;
+    height: 4px;
+    color: #764F3E;
+    background: #764F3E;
+}
+

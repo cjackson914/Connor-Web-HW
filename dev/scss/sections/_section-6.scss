@@ -1,76 +1,77 @@
 /* =============
     Section 6
 ============= */
-#section-6{
+#section-6 {
 
-    @include md{
+    @include md {
         display: grid;
         grid-template-columns: auto 80% auto;
-        grid-template-areas:". section-6 .";
+        grid-template-areas: ". section-6 .";
     }
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1000px auto;
     }
 
-    #section-6-container{
-        @include md{
+    #section-6-container {
+        @include md {
             grid-area: section-6;
         }
 
-        @include lg{
+        @include lg {
             display: grid;
             grid-template-columns: 40% auto;
         }
 
-        @include xl{
-        }
+        @include xl {}
 
-        aside{
-            img{
-                width: 100%
+        aside {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 35px;
+
+            @include md {
+                padding-bottom: 45px;
             }
 
+            @include lg {
+                padding-bottom: 50px;
+            }
+
+            // img{
+            //     width: 100%
+            // }
+
         }
 
-        #section-6-text{
+
+
+        #section-6-content {
 
             display: grid;
             grid-template-columns: 10px auto 10px;
-            grid-template-areas:". section-6-text .";
+            grid-template-areas: ". section-6-text .";
 
-            #section-6-text-content{
+            @include md {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #section-6-content-text {
                 grid-area: section-6-text;
             }
+
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+
+
+
+
+
         }
     }
 }
-
-
-// #section-6 
-
-// #section-6-container {
-//     display: grid;
-//     grid-template-columns: 10px auto 10px;
-//     grid-template-areas: ". section-6 .";
-// }
-//     @include lg{
-//         grid-template-areas: ". photo text .";
-
-//         #section-6-photo{
-//             grid-area: photo
-//         }
-        
-//         #section-6-text{
-//             grid-area: text
-//         }
-//     }
-
-// #section-6-content {
-//     grid-area: section-6;
-// }
-
-// #section-6-container img {
-//     width: 100%;
-// }
-

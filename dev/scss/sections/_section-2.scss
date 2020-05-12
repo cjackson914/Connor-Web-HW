@@ -1,49 +1,78 @@
-/* =============
-    Section 2
-============= */
+// /* =============
+//     Section 2
+// ============= */
 
-#section-2{
+#section-2 {
 
-    @include xl{
+    @include xl {
         display: grid;
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-2-content .";
     }
 
-    #section-2-container{
-        @include md{
+    #section-2-container {
+        @include md {
             display: grid;
             grid-template-columns: 40% auto;
             grid-template-areas: "photo text";
             gap: 20px;
         }
-        @include lg{
+
+        @include lg {
             grid-template-columns: 50% auto;
         }
 
-        @include xl{
+        @include xl {
             grid-area: section-2-content;
         }
 
-        aside{
-            @include md{
+        aside {
+
+            background-image: url("../img/section-2/egg.jpg");
+            height: 60vh;
+            background-position: center;
+            background-size: cover;
+            // background-repeat: no-repeat;
+
+
+            @include md {
                 grid-area: photo;
+                height: 45vh;
             }
-            img{
-                width: 100%;
+
+            @include lg {
+                height: 70vh;
             }
+
         }
 
-        #section-2-content{
-            display:grid;
+        #section-2-content {
+            display: grid;
             grid-template-columns: 10px auto 10px;
             grid-template-areas: ". section-2 .";
-            @include md{
+            // border: 1px solid red;
+
+            padding-bottom: 40px;
+
+
+            @include md {
+                padding-bottom: 0px;
+                padding-right: 10px;
                 grid-area: text;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
-            #section-2-content-text{
+            #section-2-content-text {
                 grid-area: section-2;
+
+
+                // @include md {
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                // }
             }
         }
     }
