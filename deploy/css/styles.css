@@ -497,7 +497,8 @@ header {
   height: 50vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 90px; }
   @media (min-width: 768px) {
     #section-1 {
       height: 50vh; } }
