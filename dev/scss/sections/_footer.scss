@@ -4,22 +4,27 @@
 #footer {
 
     #footer-content {
-        text-align: right;
-        color: white;
         height: 80px;
         background-color: #484D30;
+        position: relative;
+
 
         aside {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         #copyright-text {
-            display: flex;
-            justify-content: right;
-            align-items: right;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+
+            p{
+                color: white;
+            }
+            
         }
     }
 }

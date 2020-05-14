@@ -34,7 +34,7 @@ header{
             display: flex;
             grid-area: burger;
             justify-content: flex-end;
-            padding: 20px;
+            padding: 35px;
 
             @include lg{
                 display: none !important;

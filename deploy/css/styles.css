@@ -466,7 +466,7 @@ header {
       display: flex;
       grid-area: burger;
       justify-content: flex-end;
-      padding: 20px; }
+      padding: 35px; }
       @media (min-width: 992px) {
         header > div #burger-container {
           display: none !important; } }
@@ -532,7 +532,7 @@ header {
 #section-2 #section-2-container aside {
   background-image: url("../img/section-2/egg.jpg");
   height: 60vh;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover; }
   @media (min-width: 768px) {
     #section-2 #section-2-container aside {
@@ -693,16 +693,17 @@ h2 {
     Footer
 ============= */
 #footer #footer-content {
-  text-align: right;
-  color: white;
   height: 80px;
-  background-color: #484D30; }
+  background-color: #484D30;
+  position: relative; }
   #footer #footer-content aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   #footer #footer-content #copyright-text {
-    display: flex;
-    justify-content: right;
-    align-items: right; }
+    position: absolute;
+    right: 10px;
+    bottom: 10px; }
+    #footer #footer-content #copyright-text p {
+      color: white; }

@@ -30,7 +30,7 @@
 
             background-image: url("../img/section-2/egg.jpg");
             height: 60vh;
-            background-position: center;
+            background-position: center bottom;
             background-size: cover;
             // background-repeat: no-repeat;
 
@@ -52,7 +52,7 @@
             grid-template-areas: ". section-2 .";
             // border: 1px solid red;
 
-            padding-bottom: 40px;            
+            padding-bottom: 40px;
 
 
             @include md {
