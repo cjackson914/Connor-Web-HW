@@ -2,29 +2,26 @@
     Footer
 ============= */
 #footer {
-
     #footer-content {
-        height: 80px;
         background-color: #484D30;
+        height: 80px;
         position: relative;
 
-
         aside {
+            left: 50%;
             position: absolute;
             top: 50%;
-            left: 50%;
             transform: translate(-50%, -50%);
         }
 
         #copyright-text {
+            bottom: 10px;
             position: absolute;
             right: 10px;
-            bottom: 10px;
 
-            p{
+            p {
                 color: white;
             }
-            
         }
     }
 }

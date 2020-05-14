@@ -3,8 +3,8 @@
 ============= */
 #section-4 {
     display: grid;
-    grid-template-columns: 10px auto 10px;
     grid-template-areas: ". section-4 .";
+    grid-template-columns: 10px auto 10px;
 
     @include md {
         grid-template-columns: 15% auto 15%;
@@ -21,7 +21,6 @@
     #section-4-content {
         grid-area: section-4;
     }
-
 }
 
 h2 {

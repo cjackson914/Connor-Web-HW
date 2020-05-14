@@ -1,35 +1,33 @@
 /* =============
     Base
 ============= */
-
-ul{
+ul {
     padding: 0;
 
-    li{
+    li {
         list-style: none;
     }
 }
 
-.content-spacing{
+.content-spacing {
     margin-top: 40px;
 
-    @include md{
+    @include md {
         margin-top: 50px;
     }
 
-    @include lg{
+    @include lg {
         margin-top: 60px;
     }
 
-    @include xl{
+    @include xl {
         margin-top: 70px;
     }
 }
 
-hr{
-    border: none;
-    height: 4px;
-    color: #764F3E;
+hr {
     background: #764F3E;
+    border: none;
+    color: #764F3E;
+    height: 4px;
 }
-

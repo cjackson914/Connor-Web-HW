@@ -2,7 +2,6 @@
     Section 3
 ============= */
 #section-3 {
-
     background-image: url('../img/section-3/hero-2.jpg');
     background-position: center;
     background-size: cover;
@@ -19,16 +18,4 @@
     @include xl {
         height: 60vh;
     }
-
-
-    // @include xl{
-    //     display: grid;
-    //     grid-template-columns: auto 1200px auto;
-    //     grid-template-areas:". hero-2 .";
-
-    //     #section-3-hero{
-    //         grid-area: hero-2;
-    // }
-
-    // }
 }

@@ -334,21 +334,21 @@ ul {
     .content-spacing {
       margin-top: 70px; } }
 hr {
+  background: #764F3E;
   border: none;
-  height: 4px;
   color: #764F3E;
-  background: #764F3E; }
+  height: 4px; }
 
 /* =============
     Typography
 ============= */
 h1, h2, h3, h4, h5, h6, p, figure {
-  margin: 0;
-  padding: 0;
+  color: #484D30;
   font-family: 'IM Fell DW Pica', serif;
-  font-weight: 400;
   font-size: 2.3125rem;
-  color: #484D30; }
+  font-weight: 400;
+  margin: 0;
+  padding: 0; }
   @media (min-width: 768px) {
     h1, h2, h3, h4, h5, h6, p, figure {
       font-size: 3.5rem; } }
@@ -356,13 +356,13 @@ h1, h2, h3, h4, h5, h6, p, figure {
     h1, h2, h3, h4, h5, h6, p, figure {
       font-size: 4.875rem; } }
 h2 {
+  color: #484D30;
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 1.5625rem;
+  font-weight: 400;
   margin: 0;
   padding: 0;
-  font-family: 'IM Fell DW Pica', serif;
-  font-weight: 400;
-  font-size: 1.5625rem;
-  text-align: center;
-  color: #484D30; }
+  text-align: center; }
   @media (min-width: 768px) {
     h2 {
       font-size: 2.1875rem; } }
@@ -370,13 +370,13 @@ h2 {
     h2 {
       font-size: 3.875rem; } }
 h3 {
+  color: #484D30;
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 1.5625rem;
+  font-weight: 400;
   margin: 0;
   padding: 0;
-  font-family: 'IM Fell DW Pica', serif;
-  font-weight: 400;
-  font-size: 1.5625rem;
-  text-align: center;
-  color: #484D30; }
+  text-align: center; }
   @media (min-width: 768px) {
     h3 {
       font-size: 2.1875rem; } }
@@ -384,10 +384,10 @@ h3 {
     h3 {
       font-size: 2.1875rem; } }
 p {
-  line-height: 25px;
   font-family: 'Noto Serif', serif;
-  font-weight: 400;
   font-size: 1rem;
+  font-weight: 400;
+  line-height: 25px;
   text-align: justify; }
   @media (min-width: 768px) {
     p {
@@ -421,11 +421,11 @@ textarea {
       display: flex;
       justify-content: flex-end; } }
   #nav-container ul li {
-    margin-bottom: 20px;
-    line-height: 25px;
     font-family: 'Noto Serif', serif;
+    font-size: 1.25rem;
     font-weight: 400;
-    font-size: 1.25rem; }
+    line-height: 25px;
+    margin-bottom: 20px; }
     @media (min-width: 992px) {
       #nav-container ul li {
         align-items: center;
@@ -490,14 +490,14 @@ header {
     Section 1
 ============= */
 #section-1 {
+  align-items: center;
   background-image: url("../img/section-1/hero.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
   display: flex;
+  height: 50vh;
   justify-content: center;
-  align-items: center;
   margin-top: 90px; }
   @media (min-width: 768px) {
     #section-1 {
@@ -511,15 +511,15 @@ header {
 @media (min-width: 1200px) {
   #section-2 {
     display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-2-content ."; } }
+    grid-template-areas: ". section-2-content .";
+    grid-template-columns: auto 1200px auto; } }
 
 @media (min-width: 768px) {
   #section-2 #section-2-container {
     display: grid;
-    grid-template-columns: 40% auto;
+    gap: 20px;
     grid-template-areas: "photo text";
-    gap: 20px; } }
+    grid-template-columns: 40% auto; } }
 
 @media (min-width: 992px) {
   #section-2 #section-2-container {
@@ -531,9 +531,9 @@ header {
 
 #section-2 #section-2-container aside {
   background-image: url("../img/section-2/egg.jpg");
-  height: 60vh;
   background-position: center bottom;
-  background-size: cover; }
+  background-size: cover;
+  height: 60vh; }
   @media (min-width: 768px) {
     #section-2 #section-2-container aside {
       grid-area: photo;
@@ -543,17 +543,17 @@ header {
       height: 70vh; } }
 #section-2 #section-2-container #section-2-content {
   display: grid;
-  grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-2 .";
+  grid-template-columns: 10px auto 10px;
   padding-bottom: 40px; }
   @media (min-width: 768px) {
     #section-2 #section-2-container #section-2-content {
-      padding-bottom: 0px;
-      padding-right: 10px;
-      grid-area: text;
+      align-items: center;
       display: flex;
+      grid-area: text;
       justify-content: center;
-      align-items: center; } }
+      padding-bottom: 0px;
+      padding-right: 10px; } }
   #section-2 #section-2-container #section-2-content #section-2-content-text {
     grid-area: section-2; }
 
@@ -579,8 +579,8 @@ header {
 ============= */
 #section-4 {
   display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-4 ."; }
+  grid-template-areas: ". section-4 .";
+  grid-template-columns: 10px auto 10px; }
   @media (min-width: 768px) {
     #section-4 {
       grid-template-columns: 15% auto 15%; } }
@@ -604,8 +604,8 @@ h2 {
   grid-template-areas: "section-5"; }
   @media (min-width: 1200px) {
     #section-5 {
-      grid-template-columns: auto 1200px auto;
-      grid-template-areas: ". section-5 ."; } }
+      grid-template-areas: ". section-5 .";
+      grid-template-columns: auto 1200px auto; } }
   #section-5 ul {
     display: grid;
     gap: 20px;
@@ -614,23 +614,19 @@ h2 {
     grid-template-rows: repeat(3, 350px); }
     @media (min-width: 768px) {
       #section-5 ul {
+        grid-template-areas: "g1 g1" "g1 g1" "g2 g3";
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 350px);
-        grid-template-areas: "g1 g1" "g1 g1" "g2 g3"; } }
+        grid-template-rows: repeat(3, 350px); } }
     @media (min-width: 992px) {
       #section-5 ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 350px);
-        grid-template-columns: 100%;
+        grid-template-areas: "g1 g2" "g1 g3";
         grid-template-columns: 65% auto;
-        grid-template-areas: "g1 g2" "g1 g3"; } }
+        grid-template-rows: repeat(2, 350px); } }
     @media (min-width: 1200px) {
       #section-5 ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 350px);
-        grid-template-columns: 100%;
+        grid-template-areas: "g1 g2" "g1 g3";
         grid-template-columns: 65% auto;
-        grid-template-areas: "g1 g2" "g1 g3"; } }
+        grid-template-rows: repeat(2, 350px); } }
     #section-5 ul li {
       background-position: center;
       background-size: cover; }
@@ -650,8 +646,8 @@ h2 {
 @media (min-width: 768px) {
   #section-6 {
     display: grid;
-    grid-template-columns: auto 80% auto;
-    grid-template-areas: ". section-6 ."; } }
+    grid-template-areas: ". section-6 .";
+    grid-template-columns: auto 80% auto; } }
 
 @media (min-width: 1200px) {
   #section-6 {
@@ -667,9 +663,9 @@ h2 {
     grid-template-columns: 40% auto; } }
 
 #section-6 #section-6-container aside {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-bottom: 35px; }
   @media (min-width: 768px) {
     #section-6 #section-6-container aside {
@@ -677,33 +673,33 @@ h2 {
   @media (min-width: 992px) {
     #section-6 #section-6-container aside {
       padding-bottom: 50px; } }
-#section-6 #section-6-container #section-6-content {
+#section-6 #section-6-content {
   display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-6-text ."; }
+  grid-template-areas: ". section-6-text .";
+  grid-template-columns: 10px auto 10px; }
   @media (min-width: 768px) {
-    #section-6 #section-6-container #section-6-content {
+    #section-6 #section-6-content {
+      align-items: center;
       display: flex;
-      justify-content: center;
-      align-items: center; } }
-  #section-6 #section-6-container #section-6-content #section-6-content-text {
+      justify-content: center; } }
+  #section-6 #section-6-content #section-6-content-text {
     grid-area: section-6-text; }
 
 /* =============
     Footer
 ============= */
 #footer #footer-content {
-  height: 80px;
   background-color: #484D30;
+  height: 80px;
   position: relative; }
   #footer #footer-content aside {
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%); }
   #footer #footer-content #copyright-text {
+    bottom: 10px;
     position: absolute;
-    right: 10px;
-    bottom: 10px; }
+    right: 10px; }
     #footer #footer-content #copyright-text p {
       color: white; }

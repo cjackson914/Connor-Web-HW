@@ -3,19 +3,18 @@
 // ============= */
 
 #section-2 {
-
     @include xl {
         display: grid;
-        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-2-content .";
+        grid-template-columns: auto 1200px auto;
     }
 
     #section-2-container {
         @include md {
             display: grid;
-            grid-template-columns: 40% auto;
-            grid-template-areas: "photo text";
             gap: 20px;
+            grid-template-areas: "photo text";
+            grid-template-columns: 40% auto;
         }
 
         @include lg {
@@ -27,13 +26,10 @@
         }
 
         aside {
-
             background-image: url("../img/section-2/egg.jpg");
-            height: 60vh;
             background-position: center bottom;
             background-size: cover;
-            // background-repeat: no-repeat;
-
+            height: 60vh;
 
             @include md {
                 grid-area: photo;
@@ -43,36 +39,26 @@
             @include lg {
                 height: 70vh;
             }
-
         }
 
         #section-2-content {
-            display: grid;
-            grid-template-columns: 10px auto 10px;
-            grid-template-areas: ". section-2 .";
             // border: 1px solid red;
-
+            display: grid;
+            grid-template-areas: ". section-2 .";
+            grid-template-columns: 10px auto 10px;
             padding-bottom: 40px;
 
-
             @include md {
+                align-items: center;
+                display: flex;
+                grid-area: text;
+                justify-content: center;
                 padding-bottom: 0px;
                 padding-right: 10px;
-                grid-area: text;
-                display: flex;
-                justify-content: center;
-                align-items: center;
             }
 
             #section-2-content-text {
                 grid-area: section-2;
-
-
-                // @include md {
-                //     display: flex;
-                //     justify-content: center;
-                //     align-items: center;
-                // }
             }
         }
     }
