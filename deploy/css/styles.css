@@ -473,7 +473,7 @@ header {
       header > div #burger-container i {
         cursor: pointer;
         font-size: 1.25rem;
-        color: gray; }
+        color: white; }
     header > div #nav-container {
       background-color: #484D30;
       display: none;
